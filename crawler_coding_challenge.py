@@ -57,10 +57,10 @@ class PyCrawler(object):
             self.visited.add(link)    
             info = self.extract_info(link)    
 
-            print(f"""Link: {link}    
-Description: {info.get('description')}    
-Keywords: {info.get('keywords')}    
-            """)    
+            print(f"""Link: {link}
+                Description: {info.get('description')} 
+                Keywords: {info.get('keywords')} 
+                """)    
 
             self.crawl(link)    
 
